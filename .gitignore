@@ -1,0 +1,23 @@
+# Unreal Engine 관련 무시
+Binaries/
+Build/
+DerivedDataCache/
+Intermediate/
+Saved/
+.vs/
+*.sln
+*.suo
+*.vcxproj
+*.opensdf
+*.sdf
+
+# 큰 애셋 파일 무시
+Content/Meshes/*
+Content/Textures/*
+Content/Materials/*
+*.uasset
+*.umap
+
+# 기타 무시
+*.log
+*.tmp
