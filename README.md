@@ -10,7 +10,6 @@
 *   생산 관리자(`BP_ProductionManager`)는 경로 끝에 도달한 완성된 엔진의 개수를 집계하고 UI(`WBP_ProductionCounter`)에 표시합니다.
 
 아래는 프로젝트를 구성하는 주요 블루프린트 클래스들에 대한 설명입니다.
-모든 블루프린트 클래스들은 Content/Blueprints/Conveyor 경로에 존재합니다. 
 ---
 
 ## 주요 블루프린트 설명
