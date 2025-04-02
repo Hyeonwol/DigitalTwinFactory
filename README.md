@@ -35,7 +35,7 @@
 ---
 
 ### `BP_ConveyorEngine` 액터
-![Image](https://github.com/user-attachments/assets/7794678e-6b71-446e-938e-603c68dd4bc8)
+![Image](https://github.com/user-attachments/assets/940b8a92-be44-4071-99fb-1a284c301a61)
 *   **주요 역할:** `BP_EngineSpawner`에 의해 스폰되어, 지정된 컨베이어 경로(`BP_ConveyorPath` 액터)를 따라 설정된 속도로 이동하는 '엔진' 객체를 나타냅니다. 경로의 끝에 도달하면 완료 처리를 수행하고 스스로 소멸합니다.
 *   **세부 로직:**
     1.  **초기화 (`Initialize Engine` 함수):** 스포너로부터 컨베이어 경로(`ConveyorPath` - `BP_ConveyorPath` 액터 참조)와 시작 거리 정보를 받아 저장하고, 이동 상태(`IsMoving`)를 활성화하며 초기 위치를 업데이트합니다.
