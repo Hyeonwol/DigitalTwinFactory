@@ -17,7 +17,7 @@
 ## 주요 블루프린트 설명
 
 ### `BP_EngineSpawner` 액터
-
+![Image](https://github.com/user-attachments/assets/700e38a2-475f-430e-b711-18e77d0d6581)
 *   **핵심 기능:** 지정된 컨베이어 벨트 경로(`Target Conveyor Path`)의 시작 지점에 주기적으로 엔진 객체(`EngineClass`)를 생성(스폰)합니다.
 *   **주요 작동 방식:**
     1.  게임 시작 시(`BeginPlay`), 대상 컨베이어 경로가 유효하고 **`Is Spawning` 플래그가 `True`**이면, 설정된 시간 간격(`Spawn Interval`)마다 엔진 스폰 로직을 실행하는 타이머를 활성화합니다.
@@ -35,7 +35,7 @@
 ---
 
 ### `BP_ConveyorEngine` 액터
-
+![Image](https://github.com/user-attachments/assets/95546f0b-7724-43ae-8727-1de70d548986)
 *   **주요 역할:** `BP_EngineSpawner`에 의해 스폰되어, 지정된 컨베이어 경로(`BP_ConveyorPath` 액터)를 따라 설정된 속도로 이동하는 '엔진' 객체를 나타냅니다. 경로의 끝에 도달하면 완료 처리를 수행하고 스스로 소멸합니다.
 *   **세부 로직:**
     1.  **초기화 (`Initialize Engine` 함수):** 스포너로부터 컨베이어 경로(`ConveyorPath` - `BP_ConveyorPath` 액터 참조)와 시작 거리 정보를 받아 저장하고, 이동 상태(`IsMoving`)를 활성화하며 초기 위치를 업데이트합니다.
@@ -89,7 +89,7 @@
 ---
 
 ### `BP_ProductionManager` 액터 & `WBP_ProductionCounter` 위젯
-
+![Image](https://github.com/user-attachments/assets/5fc6d07c-fef0-48ea-b9c7-fdb9d2e68ab3)
 *   **개요:** 완성된 엔진의 개수를 집계하고 UI에 실시간으로 표시하는 시스템입니다. 매니저가 데이터 관리 및 업데이트 트리거를, 위젯이 UI 표시를 담당합니다.
 *   **`BP_ProductionManager` 액터:**
     *   **역할:** 완성품 개수(`CompletedItems`) 추적, `WBP_ProductionCounter` UI 관리 및 업데이트 지시.
