@@ -53,7 +53,7 @@
 ---
 
 ### `BP_RobotArm` 액터
-
+![Image](https://github.com/user-attachments/assets/c980fd03-01d2-43a2-a4ac-4f802e9b9619)
 *   **주요 역할:** 컨베이어 벨트를 따라 이동하는 `BP_ConveyorEngine` 객체가 자신의 감지 영역(`BP_DetectionZone`)에 들어오면 이를 감지하고 상호작용하는 로봇 팔입니다. 엔진이 감지되면 로봇 팔은 해당 엔진의 특정 지점을 향해 부드럽게 회전하여 추적하고, 관련된 애니메이션을 재생합니다. 엔진이 영역을 벗어나면 로봇 팔은 초기 상태로 리셋됩니다.
 *   **핵심 작동 흐름 및 상태 관리:**
     1.  **초기화 (`Event BeginPlay`):** 로봇 팔의 초기 회전 값을 `InitialRotation`에 저장합니다.
@@ -77,7 +77,7 @@
 ---
 
 ### `BP_DetectionZone` 액터
-
+![Image](https://github.com/user-attachments/assets/42c103ba-64e8-417c-a2a0-cedbc96d6bae)
 *   **주요 역할:** 레벨에 배치되어 특정 영역(`DetectionZone` 콜리전)을 감시합니다. `BP_ConveyorEngine` 객체가 이 영역에 들어오거나 나갈 때, 연결된 특정 `BP_RobotArm` 액터(`TargetRobotArm` 변수)에게 해당 엔진 정보를 전달하여 로봇 팔의 작동 시작 또는 중지(리셋)를 트리거합니다.
 *   **세부 로직:**
     1.  **엔진 감지 시작 (`On Component Begin Overlap`):** 영역에 들어온 액터가 `BP_ConveyorEngine`이고, `TargetRobotArm`이 유효하면, 해당 로봇 팔의 `Process Engine` 함수를 호출하며 엔진 정보를 전달합니다.
