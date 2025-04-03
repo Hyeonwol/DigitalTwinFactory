@@ -1,4 +1,4 @@
-# MyFactory - 언리얼 엔진 프로젝트 포트폴리오
+# DigitalTwinFactory - 언리얼 엔진 프로젝트 포트폴리오
 
 ## 프로젝트 개요
 
